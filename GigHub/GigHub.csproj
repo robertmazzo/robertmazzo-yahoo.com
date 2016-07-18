@@ -169,6 +169,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -185,6 +186,10 @@
     <Compile Include="Migrations\201607142042571_OverrideConventions-Gigs-Genres.cs" />
     <Compile Include="Migrations\201607142042571_OverrideConventions-Gigs-Genres.Designer.cs">
       <DependentUpon>201607142042571_OverrideConventions-Gigs-Genres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607151758380_PopulateGenresTable.cs" />
+    <Compile Include="Migrations\201607151758380_PopulateGenresTable.Designer.cs">
+      <DependentUpon>201607151758380_PopulateGenresTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -251,6 +256,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Gigs\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -272,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201607142042571_OverrideConventions-Gigs-Genres.resx">
       <DependentUpon>201607142042571_OverrideConventions-Gigs-Genres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607151758380_PopulateGenresTable.resx">
+      <DependentUpon>201607151758380_PopulateGenresTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
